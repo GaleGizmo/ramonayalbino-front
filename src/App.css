@@ -48,6 +48,6 @@
   .construction-card img {
     height: 100vh;
     border-radius: 0;
-    object-fit: contain;
+    object-fit: cover;
   }
 }
