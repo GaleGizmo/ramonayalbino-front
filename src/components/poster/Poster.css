@@ -1,0 +1,37 @@
+.poster {
+  --poster-gap: 16px;
+
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+  align-items: center;
+  justify-content: center;
+  padding: var(--poster-gap);
+}
+
+/* El cartel mide 1190x1682: no se amplía por encima de su tamaño real para evitar que se vea borroso. */
+.poster-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(100%, 1190px);
+  max-height: 100%;
+  border: 6px solid #eecd2f;
+  border-radius: 16px;
+  box-shadow:
+    0 0 12px rgba(190, 75, 255, 0.35),
+    0 8px 28px rgba(0, 0, 0, 0.45);
+}
+
+/* En pantallas bajas (móvil en horizontal) se ajusta al ancho y se hace scroll, en vez de encogerse. */
+@media (max-height: 520px) {
+  .poster {
+    flex: none;
+  }
+
+  .poster-image {
+    max-height: none;
+  }
+}
