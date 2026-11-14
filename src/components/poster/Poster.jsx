@@ -12,8 +12,8 @@ function Poster() {
         className="poster-image"
         src="/XMASFEST.jpg"
         alt={POSTER_ALT}
-        width="1190"
-        height="1683"
+        width="1191"
+        height="1684"
         fetchPriority="high"
       />
     </section>
