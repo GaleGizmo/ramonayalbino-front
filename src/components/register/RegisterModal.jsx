@@ -80,7 +80,7 @@ function RegisterModal({ onSubmit, onLoginClick, onClose }) {
           <small>Pon verde de envidia a Ferrán Adriá.</small>
         </label>
         <label className="form-field">
-          <span>Tu aportación culinaria líquida 🍢 </span>
+          <span>Tu aportación culinaria líquida 🍺 </span>
           <input
             type="text"
             required
