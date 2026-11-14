@@ -18,7 +18,7 @@ function App() {
    function handleAuthSuccess(guest) {
     saveSession(guest);
     setSession(guest);
-    setActiveModal(null);
+    setRegisterActive(false);
   }
 
   function handleTicketsClick() {
@@ -45,7 +45,7 @@ function App() {
       ) : (
         <RegisterModal
           onSubmit={handleAuthSuccess}
-          onClose={() => setRegisterActive(null)}
+          onClose={() => setRegisterActive(false)}
         />
       )}
     </main>
